@@ -42,7 +42,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/imageexercise1:v1
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/exercise1:v1
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
